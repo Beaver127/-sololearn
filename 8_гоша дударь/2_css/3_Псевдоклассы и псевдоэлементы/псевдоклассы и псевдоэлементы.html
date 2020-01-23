@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" content="text/css" href="style.css"/>
+</head>
+
+<!-- 
+
+p#example:first-letter {
+	color:red;
+}
+first-letter - для того чтобы в данном теге задать стиль первому символу
+
+
+
+He<span id="word_l">l</span>lo - с помощью span придаем id символу 
+
+span#word_l { - затем ссылаемся на этот символ и задаем стиль
+	color: green;
+}
+
+p#wolf:first-line {
+	color: grey;
+}
+first-line - придает стиль первой строчке
+
+
+.href {
+	color: black;
+	text-decoration: underline(none,line-through,blink,overline) - декорация ссылки 
+	
+	underline - стандартно 
+	line-through - перечеркнуто
+	blink - мегающее
+	overline - палка вверху ссылки
+	
+}
+
+стиль для ссылки 
+.href { - можем просто задавать стиль ссылке 
+	color: black;
+}
+.href:hover { - при навождении на ссылку будет меняться соответственно стиль 
+	color: red;
+}
+.href:active { - при нажатии на ссылку будет меняться стиль 
+	color: blue;
+}
+.href:visited { - при 1 использовании ссылки она будет менять свои стиль навсегда(пока в кеше инфа не очистится об посещении сайта)
+	color: gray;
+}
+
+p:hover { - так же изменение стиля при навождении можно применять и к простым тегам 
+	color: red;
+}
+p:active { - так же изменение стиля при нажатии можно применять и к простым тегам 
+	color: blue;
+}
+
+-->
+
+<body>
+
+<p id="example">EXAMPLE</p>
+
+He<span id="word_l">l</span>lo
+
+<p id="wolf">This is wolf</p>
+
+<p id="tiger">Hi Beaver</br>Bye</p>
+
+<a class="href" href="#" title="Проверка">Стили для ссылки</a>
+
+
+</body>
+</head>

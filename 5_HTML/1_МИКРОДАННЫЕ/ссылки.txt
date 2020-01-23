@@ -1,0 +1,1 @@
+http://www.google.com/webmasters/tools/richsnippets - интрумент проверки структурных данных (скопировать html и вставить его в окно для проверки)

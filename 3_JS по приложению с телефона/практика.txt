@@ -1,0 +1,1306 @@
+//FUNCTIONS
+
+// 1
+// function hi(name) {
+// 	alert("Hi," + name);
+// }
+// hi("last beaver");
+
+// 2
+// function add(a,b) {
+// 	var c = a + b;
+// 	return c;
+// }
+// alert(add(2,2));
+
+//ALERT,PROMPT,CONFIRM
+
+// 1
+//alert("HI \n beaver");
+
+// 2
+// var user = prompt("Please enter your name");
+// alert(user);
+
+// 3
+// var result = confirm("Do you really want to leave this page?");
+// if (result == true) {
+//   alert("Thanks for visiting");
+// }
+// else {
+//   alert("Thanks for staying with us");
+// }
+
+//OBJECTS
+
+// 1
+// var person = {
+//  name: "John", age: 31, 
+//  favColor: "green", height: 183
+// };
+// alert(person.name.length);
+// alert(person["age"]);
+
+// 2
+//CONSTRUCTOR FOR OBJECT 
+// function person(name, age, color) {
+//   this.name = name;
+//   this.age = age;
+//   this.favColor = color;
+// }
+
+// var p = new person("Last Beaver",18,"orange");
+// alert(p.name + "|" + p.age + "|" + p.favColor);
+
+//METHODS FOR OBJECT
+
+// 1
+// function person(name, age) {
+//   this.name = name;  
+//   this.age = age;
+//   this.setName = function (name) {
+//     this.name = name;
+//   }
+// }
+// var p = new person("Last", 21);
+// p.setName("Last Beaver");
+// alert(p.name);
+
+// 2
+
+// function person(name, age) {
+//   this.name= name;  
+//   this.age = age;
+//   this.yearOfBirth = bornYear;
+// }
+// function bornYear() {
+//   return 2020 - this.age;
+// }
+// var p = new person("B", 18);
+// alert(p.yearOfBirth());
+
+//ARRAYS
+
+// 1
+// var letters = new Array("A","B","C");
+// alert(letters);
+//alert(letters[0]);
+
+
+// 2
+// var courses = new Array(3);
+// courses[0] = "HTML";
+// courses[1] = "CSS";
+// courses[2] = "JS";
+
+// 3
+// var courses = new Array();
+// courses[0] = "HTML";
+// courses[1] = "CSS";
+// courses[2] = "JS";
+// courses[3] = "C++";
+
+// 4
+//var courses = ["HTML", "CSS", "JS"]; 
+
+// 5
+// var c1 = ["HTML", "CSS"];
+// var c2 = ["JS", "C++"];
+//не изменяем методы предыдущие а просто возвращаем новый соедененный
+//HTML, CSS, JS, C++
+// var courses = c1.concat(c2);
+
+// 6
+//можем создать что то на подобии map списка
+//но такой масив теряет свои свойства масива 
+//например если вызвать length нам выдаст 0
+//масив станет объектом который хранит в себе 
+//ключи \ значения
+//АСОЦИАТИВНЫЙ МАСИВ
+// var person = []; //empty array
+// person["name"] = "John";
+// person["age"] = 46;
+// document.write(person["age"]);
+
+//OBJECT MATH
+//document.write(Math.PI);
+//Outputs 3.141592653589793
+
+
+//SET INTERVAL
+// function myAlert() {
+// 	alert("H");
+// }
+//для остановки(остановку нужно делать с помощью другой функции)
+// function stop() {
+// 	clearInterval(myAlert);
+// }
+//для старта
+// function start() {
+//    	setInterval(myAlert,2000);
+// }
+// start();
+//указываем функцию которая будет выполняться циклически
+//черещ каждые 3 сек 
+//setInterval(myAlert, 1000);
+
+//DATE OBJECT
+// 1
+// var d = new Date();
+//d stores the current date and time
+
+//2
+//Fri Jan 02 1970 00:00:00
+// var d1 = new Date(86400000); 
+
+//Fri Jan 02 2015 10:42:00
+// var d2 = new Date("January 2, 2015 10:42:00");
+
+//Sat Jun 11 1988 11:42:00
+// var d3 = new Date(88,5,11,11,42,0,0);
+
+// 3
+// function printTime() {
+//   var d = new Date();
+//   var hours = d.getHours();
+//   var mins = d.getMinutes();
+//   var secs = d.getSeconds();
+//   document.body.innerHTML = hours+":"+mins+":"+secs;
+// }
+// setInterval(printTime, 1000);
+
+
+// DOM
+
+// 1
+//innerHTML: свойство содержимое блока \ мы можем его поменять как ниже сделали
+//document.body.innerHTML="Last Beaver";
+
+// 2
+//finds element by id
+//document.getElementById(id) 
+//finds elements by class name
+//document.getElementsByClassName(name) 
+//finds elements by tag name
+//document.getElementsByTagName(name)
+
+// 3
+//в теге должны указать значение свойства id
+//<body id="body"></body>
+// var elem = document.getElementById("body");
+// elem.innerHTML = "Last127001";
+
+// 4
+//в теге должны указать значение свойства class
+//<body class="body"></body>
+//таким образом сразу выгребаем массивом все возможные объекты
+//и обращаемся к ним по индексу с массива
+// var elem = document.getElementsByClassName("body");
+// elem[0].innerHTML = "Last128001";
+
+// 5
+//в теге ничего указывать не нужно так как мы ищем именно
+//по названи тега все воможные объекты(выгребаем массив)
+// var elem = document.getElementsByTagName("body");
+// elem[0].innerHTML = "Last129001";
+
+// 6
+//перебираем все теги <p> и меняем их значения 
+// var p = document.getElementsByTagName("p");
+// for(var i = 0; i < p.length;i++) {
+// 	p[i].innerHTML = "Last Beaver";
+// }
+
+// 7
+//перебираем все теги <p> и выводим в консоль их значения 
+// var p = document.getElementsByTagName("p");
+// for(var i = 0; i < p.length;i++) {
+// 	console.log(p[i]);
+// }
+
+// 8
+// var elem = document.getElementById("id_3");
+
+//ВАЖНО(WARNING) при работе с элементами(тегами\блоками) лучше
+//нужно приставку Element так как браузер воспринимает
+//пробелы и ппереносы строк тоже за элементы
+//firstElementChild
+//lastElementChild
+//все дальнейшие свойства будут применяться именно ко всем 
+//пробелам \ тексту \ и так далее \ для обращения к тегам \ блокам
+//приставка Element
+
+//возвращает вложенные элементы которые находятся в нашем элементе
+//element.childNodes;
+
+//возвращает первый вложенный элемент в нашем элементе
+//element.firstChild;
+
+//возвращает последний вложенный элемент в нашем элементе
+//element.lastChild;
+
+//возвращает true в нашем элементе есть вложенные элементы
+//иначе false
+//element.hasChildNodes();
+
+//возвращает следующий по по порядку елемент на уровне с нашим елементом
+//element.nextSibling;
+
+//возвращает предыдущий по по порядку елемент на уровне с нашим елементом
+//element.previousSibling;
+
+//возвращает парента нашего элемента
+//element.parentNode;
+
+// 9
+//у парента меняем содержимое всех его дочерних елементов
+//  var a = document.getElementsByClassName("content");
+//      var arr = a[0].childNodes;
+//      for(var x=0;x<arr.length;x++) {
+//        arr[x].innerHTML = "new text";
+// }
+
+// 10
+//all elements
+//у парента меняем содержимое всех его дочерних елементов
+//  var a = document.getElementsByClassName("content");
+//      var arr = a[0].childNodes;
+//      for(var x=0;x<arr.length;x++) {
+//        arr[x].innerHTML = "new text";
+// }
+
+// 11
+//first
+// var a = document.getElementsByClassName("content");
+// var arr = a[0].firstElementChild;
+// arr.innerHTML = "new text";
+// alert(arr.innerHTML);
+
+// 12
+//last
+//  var a = document.getElementsByClassName("content");
+// var arr = a[0].lastElementChild;
+// arr.innerHTML = "new text";
+// alert(arr.innerHTML);
+
+
+// 13
+//hasElement
+// var a = document.getElementsByClassName("content");
+// var last = a[0].lastElementChild;
+// last.innerHTML = last.hasChildNodes();
+
+
+// 14
+//обращение к паренту
+// var a = document.getElementsByClassName("content");
+// var last =  a[0].lastElementChild;
+// last.parentNode.style = "color: red";
+
+// 15
+//обращение в след элементу на том же уровне
+//previousElementSibling
+// var a = document.getElementsByClassName("content");
+// var last =  a[0].firstElementChild;
+// last.style = "color: red";
+// last.nextElementSibling.previousElementSibling.style = "color: green";
+
+// ИЗМЕНЕНИЯ АТРИБУТОВ ЧЕРЕЗ DOM
+
+// 1
+// var el = document.getElementsByClassName("link");
+// el[0].href = "https://vk.com/audios276675391";
+// document.getElementById("img3")
+// .src="http://www.blagobor.by/sites/default/files/colors.jpg";
+
+// 2
+// var a = document.getElementById("l1");
+// a.style = "display: inline-block;";
+// a.style.color = "red";
+// a.style.width = "400px";
+// a.style.backgroundColor = "green";
+// a.style.height = "100px";
+
+
+//добавление \ удаление элементов 
+
+// 1
+
+//возвращает клон объекта
+//elem.cloneNode() 
+
+//создавание объекта
+//document.createElement(element)
+
+//создание текстового объекта
+//document.createTextNode(text)
+
+//добавляет в елемент наш созданный елемент 
+// (добавляет елемент в конец)
+//elem.appendChild(newElem)
+
+//вставляет созданный елемент в нужный нам елемент
+//elem.insertBefore(node1,node2)
+
+// 2
+//создаем тег
+// var p = document.createElement("p");
+// //создаем текст для тега
+// var node = document.createTextNode("Some text");
+// //добавляем текст в тег
+// p.appendChild(node);
+// //получаем объект из документа
+// var div = document.getElementsByClassName("box");
+// //добавляем наш элемент <p> с текстом в блок .box
+// div[0].appendChild(p);
+
+// УДАЛЕНИЕ ЭЛЕМЕНТОВ
+// 1
+// var box = document.getElementsByClassName("box");
+// box[0].style.color = "red";
+// box[0].style.backgroundColor = "green";
+// var title = box[0].firstElementChild;
+// box[0].removeChild(title);
+
+// 2
+// var box = document.getElementsByClassName("box");
+// box[0].removeChild(box[0].firstElementChild);
+
+// 3
+// var title = document.getElementById("title");
+// title.parentNode.removeChild(title);
+
+// замещание элементов
+// elem.replaceChild(newNode,oldNode);
+
+// 1
+// //создаем тег с текстом
+// var new_h2 = document.createElement("h2");
+// var text = document.createTextNode("My New Text");
+// new_h2.appendChild(text);
+
+// //заменяем старый тег на новый созданный
+// var parent = document.getElementById("box");
+// var old_h2 = document.getElementById("title");
+// parent.replaceChild(new_h2, old_h2);
+
+// СОЗДАНИЕ АНИМАЦИЙ
+
+// 1
+// // запуск анимации (перемещение квадрата вправо)
+// //вызов каждую секунду 
+// var t = setInterval(move, 1000);
+// //позиция блока
+// var pos = 0;
+// var box = document.getElementById("box");
+// function move() {
+// 	//когда блок доходит до 100 обнуляем переменную позиции
+// 	if(pos > 100) {
+// 		pos = 1;
+// 	} else {
+// 		//иначе двигаем вправ на 30px
+// 		pos+=30;
+// 	}
+// 	//задаем стиль
+// 	box.style.left = pos+"px";
+// }
+
+// 2
+
+// можно сразу запускать несколько потоков исполнения
+// var t = setInterval(move, 1000);
+// // var t1 = setInterval(move, 2000);
+// var pos = 0;
+// var box = document.getElementById("box");
+// function move() {
+// 	//когда блок доходит до 100 останавливаем анимацию
+// 	if(pos > 100) {
+// 	 clearInterval(t);
+// 	} else {
+// 		pos+=30;
+// 	}
+// 	box.style.left = pos+"px";
+// }
+
+//СОБЫТИЯ
+
+//onclick: при клике
+//onload: при загрузки объекта
+//onunload: при неудачной загрузке странице либо при закрытии стрвницы
+//onchange: при изменении содержимого объекта(textarea,input)
+//onmouseover: при наведении на элемент курсором или на его парента
+//onmouseout: при выходе за пределы элемента
+//onmousedown:в момент нажатия на элемент
+//onmouseup:в момент отпускания мыши над элементом
+//onblur:при потере фокуса у элемента
+//onfocus:при получении элементом фокуса
+//onsubmit:при валидации формы(создан для нее)
+
+//<p onclick="someFunc()">some text</p>
+
+// 1
+// function show() {
+// 	var demo = document.getElementById("demo");
+// 	demo.innerHTML = new Date();
+// }
+
+// 2
+// var demo = document.getElementById("demo");
+// demo.onclick = function () {
+// 	demo.innerHTML = new Date();
+// }
+
+// 3 после загрузки страницы
+//меняем текст блока .demo
+// function go () {
+// 	var n = document.getElementById("demo");
+// 	n.innerHTML = "N";
+// }
+// window.onload = go;
+
+// 4 когда пользователь покидает страницу
+//вроде отключен
+// function exit() {
+// 	alert("Good bye!");
+// }
+// window.onunload = exit;
+//window.onunload(alert('Вы покидаете страницу'));
+
+// 5 при изменении значения поля ео только при 
+//уберании фокуса с поля
+// function change() {
+// 	var x = document.getElementById("name");
+// 	x.style.color = "green";
+// 	x.value = x.value.toUpperCase();
+// }
+
+// 6 добавление прослушки 
+//1:название события (указывается без приставки 'on')
+//2:функция
+//3:всплытие или перехват(булевское значение)
+//element.addEventListener(event, function, useCapture);
+//если 3 параметром ничего не указывать то по умалчанию 
+//будет тип всплытие от парента по эрархии до нужного элемента
+//будут выполняться события а если обозначить как true то
+//будет использоваться перехват который будет по эрархии от 
+//самого первого элемента до последнего до парента
+
+//false(всплытие) - с глубины наверх
+//true(перехват) - с верха до глубины
+
+//slider
+// 1
+// var images = ["img/products/01.jpg",
+// "img/products/02.jpg","img/products/03.jpg"];
+// var n = 0;
+// function right() {
+// 	var slider = document.getElementById("slider");
+// 	n++;
+// 	if(n >= images.length) {
+// 		n = 0;
+// 	}
+// 	slider.src = images[n];
+// }
+// function left() {
+// 	var slider = document.getElementById("slider");
+// 	n--;
+// 	if(n < 0) {
+// 		n = images.length-1;
+// 	}
+// 	slider.src = images[n];
+// }
+
+// 2
+// validation form
+
+// function validate() {
+// 	var pass = document.getElementById("password");
+// 	var pass1 = document.getElementById("passwordConfirm");
+// 	if(pass.value != "" && pass1.value != "") {
+// 		if(pass.value == "Last Beaver") {
+// 			alert("Last Beaver");
+// 			}
+// 		if(pass.value == pass1.value) {
+// 			//пропускаем пользователя
+// 			return true;
+// 		}
+// 	}
+// 	alert("Значения в колонках должны совпадать и не недолжны быть пустыми");
+// 	//не позволяем пользователю пройти дальше
+// 	return false;
+// }
+
+// ES6
+
+// ПЕРЕМЕННЫЕ
+// var a = 10;//глобальная переменная
+// const b = "hi";//локальная константа
+// let c = true;//локальная переменная
+
+// 1
+// if(true) {
+// 	let n = 5;
+// }
+//error for not found 'n' \локальная переменная
+// alert(n);
+
+// 2
+// сравнение let and var
+// // var
+// console.log("VAR VARIABLE");
+// var a = 1;
+// if(true) {
+// 	var a = 2;
+// 	console.log(a);//2
+// }
+// console.log(a);//2
+
+// // let
+// console.log("LET VARIABLE");
+// let a1 = 1;
+// if(true) {
+// 	let a1 = 2;
+// 	//different variable
+// 	console.log(a1);//2
+// }
+// console.log(a1);//1
+
+
+// шаблонные строки
+// 1
+// let t = "Beaver";
+// let msg = `Hi ${t}!`;
+// console.log(msg);
+
+// 2
+// let a = 2;
+// let b = 5;
+// let msg = `The sum is ${a+b}`;
+// console.log(msg);
+
+// ЦИКЛЫ
+// 1 для итерации по переменным объекта
+// let obj = {
+// 	a:1,
+// 	b:2,
+// 	c:3
+// };
+// for (let v in obj) {
+// 	console.log(`${v}: ${obj[v]}`);
+// }
+
+// 2 для итерации по массиву
+// let list = ["a","b","c"];
+// for(let l of list) {
+// 	console.log(l);
+// }
+
+// 3 итерация по строке
+// for(let l of "Hello") {
+// 	console.log(l);
+// }
+
+//ФУНКЦИИ
+
+// 1
+//sum:название функции
+//(a,b):передаваемые параметры функции
+//=>:сокращённое создание функции
+// const sum = (a,b) => {
+// 	let sum = a + b;
+// 	console.log(sum);
+// }
+// sum(4,5);
+
+// 2
+//такая принимает один параметр 'x' и 
+//возвращает значение "Welcome " + x;
+// const greet = x => "Welcome " + x;
+// console.log(greet("Beaver"));
+
+// 3
+//функция с пустыми параметрами
+// const go = () => console.log("Last Beaver");
+// go();
+
+// 4
+//проход по всеми массиву и вызов метода для каждого 
+//элемента массива(с помощью обычного js)
+// var arr = [1,2,3];
+// arr.forEach(
+// function(el) {
+// 	console.log(el);
+// }
+// );
+
+//с помощью ES6
+// var arr = [1,2,3];
+// arr.forEach(
+// el => {
+// 	console.log(el);
+// }
+// );
+
+// 5
+// var list = [0,2,5];
+// //итератор массива
+// const itterator = (array) => {
+// 	//вывод значений
+// 	array.forEach(
+// 		el => {console.log(el);} 
+// 		);
+// }
+// itterator(list);
+
+// Параметры по умолчанию в ES6
+
+//если вообще не передавать значений
+//то сума будет по умалчанию 20
+// const test = (a = 10, b = 10) => {
+//   return a + b;
+// }
+// console.log(test());
+
+//ОБЪЕКТЫ
+// 1
+// let tree = {
+//   height: 10,
+//   color: 'green',
+//   //сокращенное создание функции
+//   grow() {
+//     this.height += 2;
+//   }
+// };
+// tree.grow();
+// console.log(tree.height); // 12
+
+// 2
+// let height = 5;
+// let health = 100;
+// let athlete = {
+// 	//неявная инициализация переменных 
+// 	//с помощью названия такими же именами
+//   height,
+//   health
+// };
+// console.log(athlete.height);//5
+// console.log(athlete.health);//100
+
+// 3
+// //перезапись переменной
+// var a = {x: 1, x: 2, x: 3, x: 4};
+// console.log(a.x);//4
+
+//ВЫЧИСЛЯЕМЫЕ ИМЕНА СВОЙСТВ
+
+// 1
+// let prop = 'name';
+// let id = '1234';
+// let mobile = '08923';
+// let user = {
+// 	//name: 'Beaver'
+//   [prop]: 'Beaver',
+//   //user_1234: "08923"
+//   [`user_${id}`]: `${mobile}`
+// };
+// console.log(user.name);//Beaver
+// console.log(user.user_1234);//08923
+
+// 2
+// var i = 0;
+// var a = {
+// 	//foo1:1
+//   ['foo' + ++i]: i,
+//   //foo1:2
+//   ['foo' + ++i]: i,
+//   //foo1:3
+//   ['foo' + ++i]: i
+// };
+// for(let v in a) {
+// 	//foo1:1...
+// 	console.log(`${v}:${a[v]}`);
+// }
+
+// 3
+// var param = 'size';
+// var config = {
+// 	//size: 12 
+//   [param]: 12,
+//   //mobileSize: 4
+//   ['mobile' + param.charAt(0).toUpperCase() + param.slice(1)]: 4
+// };
+// console.log(config);
+
+
+//Object.assign() в ES6
+
+// 1
+//замена и добавление переменных из одного объекта в другой
+// let person = {
+//   name: 'Jack',
+//   age: 18,
+//   sex: 'male'
+// };
+// let student = {
+//   name: 'Bob',
+//   age: 20,
+//   xp: '2'
+// };
+// let newStudent = Object.assign({}, person, student);
+// console.log(newStudent.name);//Bob
+// console.log(newStudent.age);//20
+// console.log(newStudent.sex);//male
+// console.log(newStudent.xp);//2
+
+// 2
+//неправильная инициализация переменных объектов
+// //с помощь чистого js
+// let person = {name: 'Jack',age: 18};
+// //ссылка на объект person
+// let newPerson = person; 
+// newPerson.name = 'Bob'; 
+// //неправильное значение (должно быть Jack)
+// console.log(person.name); // Bob
+// console.log(newPerson.name); // Bob
+
+//исправление с помощью ES6
+
+// let person = {name: 'Jack',age: 18};
+// let newPerson = Object.assign({}, person); 
+// newPerson.name = 'Bob';
+// console.log(person.name); // Jack
+// console.log(newPerson.name); // Bob
+
+// 3
+// let person = {
+//   name: 'Jack',
+//   age: 18
+// };
+// //можем создавать объект таким образом и присваивать и изменять
+// //переменные для нащего объекта {name: 'Bob'}
+// let newPerson = Object.assign({}, person, {name: 'Bob'});
+
+//Деструктуризация массива в ES6
+
+// 1
+// let arr = ['1', '2', '3'];
+// //присваивание переменным значения из массива
+// let [one, two, three] = arr;
+// console.log(one); // 1
+// console.log(two); // 2
+// console.log(three); // 3
+
+//2 
+// //метод для возврата массива
+// let a = () => {return [1, 3, 2];};
+// //инициализируем переменные
+// let [one, , two] = a();
+// console.log(one); // 1
+// console.log(two); // 2
+
+// 3
+// //присваиваем значения одного масива другому
+// let a, b, c = 4, d = 8;
+// //задаем переменной 'a':2,b:6
+// [a, b = 6] = [2];
+// console.log(a); // 2
+// console.log(b); // 6
+////
+// //задаем переменной 'c' значений 'd'
+// //и наоборот
+// [c, d] = [d, c];
+// console.log(c); // 8
+// console.log(d); // 4
+
+// 4
+// let names = ["1","2","3"];
+// let [f,s,t] = names;
+// console.log(t);
+
+// 5
+// let names = ['John','Fred','Ann'];
+// let [Ann,Fred,John] = names;
+// console.log(John);//Ann
+
+// Деструктуризация объекта в ES6
+
+// 1
+// let obj = {h:100, s: true};
+// //берем значения с объекта
+// let {h, s} = obj;
+// console.log(h); // 100
+// console.log(s); // true
+
+// 2
+// let a, b;
+// //создание объекта на ходу и присванивание 
+// //переменных его значениям
+// ({a, b} = {a: 'Hello ', b: 'Jack'});
+// console.log(a + b); // Hello Jack
+
+// 3
+// let {a, b} = {a: 'Hello ', b: 'Jack'};
+// console.log(a + b);
+
+// 4
+// //объект
+// var o = {h: 42, s: true};
+// //присваиваем значения переменным 
+// //и меняем названия переменных
+// var {h: foo, s: bar} = o;
+// //console.log(h); // Error
+// console.log(foo); // 42
+
+// 5
+// задаем значения по умалчанию
+// var obj = {id: 42, name: "Jack"};
+// let {id = 10, age = 20} = obj;
+// console.log(id); // 42
+// console.log(age); // 20
+
+//Параметры Rest в ES6
+
+// 1
+// function containsAll(arr) {
+// 	//arr:принимаем массив параметром
+// 	//argumetns:массив всех переданных 
+// 	//значений в функцию
+//   for (let k = 1; k < arguments.length; k++) {
+//   		//перебираем все значения переданные 
+//   		//кроме массива
+//     let num = arguments[k];
+//     //проверяем если нет такого значения в 
+//     //массиве возвращаем false
+//     if (arr.indexOf(num) === -1) {
+//       return false;
+//     }
+//   }
+//   //если все переданные значения есть в массиве
+//   return true;
+// }
+// let x = [2, 4, 6, 7];
+// console.log(containsAll(x, 2, 4, 7));//true
+// console.log(containsAll(x, 6, 4, 9));//false
+// console.log(containsAll(x, 4, 2, 6,7));//true
+// console.log(containsAll(x, 4, 2, 6,7,1));//false
+
+
+// 2
+//массив который будет заполнятся идексами положения
+//элемента 'a' в массиве
+// var indices = [];
+// var array = ['a', 'b', 'a', 'c', 'a', 'd'];
+// //искомый элемент
+// var element = 'a';
+// //idx = 0
+// var idx = array.indexOf(element);
+// while (idx != -1) {
+// 	//добавляем идекс в массив для индексов
+//   indices.push(idx);
+//   //находим след индекс и добавляем еденицу
+//   //для наглядности
+//   idx = array.indexOf(element, idx + 1);
+// }
+// // [0, 2, 4]
+// console.log(indices);
+
+//проверка на существование 
+//значений в массиве с помощью ES6
+
+//принимаем два параметра
+//для массива основного 
+//и для массива проверяемых значений
+// function containsAll(arr, ...nums) {
+//   for (let num of nums) {
+//     if (arr.indexOf(num) === -1) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// Только последний параметр функции может быть помечен
+ // как остаточный параметр. Если лишние аргументы отсутствуют,
+ //  остаточный параметр просто будет пустым массивом. Остаточный 
+ //  параметр никогда не будет undefined.
+
+
+//Оператор расширения
+
+// 1
+//js
+// function myFunction(w, x, y, z) {
+//   console.log(w + x + y + z);
+// }
+// var args = [1, 2, 3];
+// myFunction.apply(null, args.concat(4));//10
+
+// 2
+//ES6
+// const myFunction = (w, x, y, z) => {
+//   console.log(w + x + y + z);
+// };
+// let args = [1, 2, 3];
+// myFunction(...args, 4);//10
+
+// 3
+//подставление из массива нужных параметров
+// var dateFields = [2020, 1, 23];  // 1 Jan 1970
+// var date = new Date(...dateFields);
+// console.log(date);
+
+// 4
+// js добавления в середину массива
+// var arr = ["One", "Two", "Five"];
+// arr.splice(2, 0, "Three");
+// arr.splice(3, 0, "Four");
+// console.log(arr);
+
+// ES6
+// let newArr = ['Three', 'Four']; 
+// let arr = ['One', 'Two', ...newArr, 'Five'];
+// console.log(arr);
+
+// 5 Расширение в объектных строках
+
+// 1
+// const obj1 = { foo: 'bar', x: 42 };
+// const obj2 = { foo: 'baz', y: 5 };
+// const clonedObj = {...obj1}; // { foo: "bar", x: 42 }
+// const mergedObj = {...obj1, ...obj2}; // { foo: "baz", x: 42, y: 5 }
+
+// 2 получатся двухмерные массивы
+// const obj1 = { foo: 'bar', x: 42 };
+// const obj2 = { foo: 'baz', y: 5 };
+// const merge = (...objects) => ({...objects});
+// let mergedObj = merge(obj1, obj2);
+// // { 0: { foo: 'bar', x: 42 }, 1: { foo: 'baz', y: 5 } }
+// let mergedObj2 = merge({}, obj1, obj2);
+// // { 0: {}, 1: { foo: 'bar', x: 42 }, 2: { foo: 'baz', y: 5 } }
+
+// Классы в ES6
+
+// 1
+// class Rectangle {
+// 	//может быть только один конструктор
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// }
+// const square = new Rectangle(5, 5);
+// const poster = new Rectangle(2, 3); 
+// console.log(square.height);
+// console.log(poster.height);
+
+// 2
+// var Square = class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// };
+
+// 3
+// var Square = class {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// };
+
+// 4
+//вот таким образом можно создавать и использовать
+//геттеры и сеттеры
+// class Person {
+// 	constructor(name,age) {
+// 		this.name = name;
+// 		this.age = age;}
+// 		//getters & setters
+// 	get getName() {return this.name;}
+// 	set setName(name) {this.name = name;}
+// 	get getAge() {return this.age;}
+// 	set setAge(age) {this.age = age;}
+// }
+// var person = new Person("Last Beaver",18);
+// person.setName = "Beaver";
+// console.log(person.getName);
+
+// 5
+// class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+//   get area() {
+//     return this.calcArea();
+//   }
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+// }
+// const square = new Rectangle(5, 5);
+// console.log(square.area); // 25
+//В коде выше area - это геттер, а calcArea - это метод.
+
+
+// 6
+// Другой тип метода - статический метод, который не может быть вызван
+ // из экземпляра класса. Статические методы зачастую используются для 
+ // создания служебных функций в приложении.
+// Например:
+
+
+// 7
+// class Point {
+//   constructor(x, y) {
+//     this.x = x;
+//     this.y = y;
+//   }
+//   static distance(a, b) {
+//     const dx = a.x - b.x;
+//     const dy = a.y - b.y;
+//     return Math.hypot(dx, dy);
+//   }
+// }
+// const p1 = new Point(7, 2);
+// const p2 = new Point(3, 8);
+// console.log(Point.distance(p1, p2));
+//Как видите, статический метод distance вызывается напрямую с 
+//использованием имени класса без объекта.
+
+//Наследование в ES6
+// 1
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   speak() {
+//     console.log(this.name + ' makes a noise.');
+//   }
+// }
+
+// class Dog extends Animal {
+// 	//переопределяем метод
+//   speak() {
+//     console.log(this.name + ' barks.');
+//   }
+// }
+// let dog = new Dog('Rex');
+// dog.speak();
+
+// 2
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   speak() {
+//     console.log(this.name + ' makes a noise.');
+//   }
+// }
+// class Dog extends Animal {
+// 	//переопределяем метод
+//   speak() {
+//   	//используем метод парента
+//     super.speak(); // Super
+//     console.log(this.name + ' barks.');
+//   }
+// }
+// let dog = new Dog('Rex');
+// dog.speak();
+
+
+// ES6 Map
+//мапа
+// let map = new Map([['k1', 'v1'], ['k2', 'v2']]);
+// console.log(map.size); // 2
+// Методы
+// set(key, value) Добавляет конкретную пару ключ/значение в Map. Если выбранный ключ уже существует, соответствующее ему значение заменяется выбранным значением.
+// get(key) Получает значение, относящееся к конкретному ключу на Map. Если нужный ключ не существует, появляется значение undefined.
+// has(key) Возвращает true, если заданный ключ представлен на Map, и false, если нет.
+// delete(key) Удаляет пару ключ/значение с заданным ключом из Map и возвращает true. Возвращает false, если элемент не существует.
+// clear() Удаляет все пары ключ/значение с Map.
+// keys() Возвращает итератор ключей на Map для каждого элемента.
+// values() Возвращает итератор значений на Map для каждого элемента.
+// entries() Возвращает итератор массива [key, value] на Map для каждого элемента.
+
+// let map = new Map();
+// map.set('k1', 'v1').set('k2', 'v2');
+// console.log(map.get('k1')); // v1
+// console.log(map.has('k2')); // true
+// for (let kv of map.entries())
+//   console.log(kv[0] + " : " + kv[1]);
+
+
+// ES6 Set
+
+// let set = new Set([1, 2, 4, 2, 59, 9, 4, 9, 1]);
+// console.log(set.size); // 5
+
+// Методы
+// add(value) Добавляет в Set новый элемент с заданным значением.
+// delete(value) Удаляет определенное значение из Set.
+// has(value) Возвращает true, если заданное значение существует в Set, или false, если отсутствует.
+// clear() Очищает Set.
+// values() Возвращает итератор значений в Set.
+
+// let set = new Set();
+// set.add(5).add(9).add(59).add(9);
+// console.log(set.has(9));
+// for (let v of set.values())
+//   console.log(v);
+
+// Промисы ES6
+
+// Промис (promise) предлагает лучший способ асинхронного программирования 
+//по сравнению с привычным подходом использования setTimeout() типа метода.
+
+// 1
+// //асинхронное выполнение потоков на чистом js
+// setTimeout(function() {
+// 	//выполнится вторым
+//   console.log("Work 1");
+//   setTimeout(function() {
+//   	//выполнится третим
+//     console.log("Work 2");
+//   }, 1000);
+// }, 1000);
+// //выполнится первым а другие будет ещё выполнятся
+// console.log("End");
+
+// 2
+// В таких случаях на помощь приходит ES6.
+//  Промис может быть создан следующим образом: 
+
+// new Promise(function(resolve, reject) {
+//     // Work
+//     if (success)
+//         resolve(result);
+//     else
+//         reject(Error("failure"));
+// }); 
+
+// В данном случае resolve является методом для success, а reject — методом для failure.
+// Если метод возвращает промис, его вызовы должны использовать метод then, который принимает два метода в качестве входного значения — один для success и другой для failure.
+
+// Например:
+// function asyncFunc(work) {
+//   return new Promise(function(resolve, reject) {
+//     if (work === "")
+//       reject(Error("Nothing"));
+//     setTimeout(function() {
+//       resolve(work);
+//     }, 1000);
+//   });
+// }
+
+// asyncFunc("Work 1") // Task 1
+// .then(function(result) {
+//   console.log(result);
+//   return asyncFunc("Work 2"); // Task 2
+// }, function(error) {
+//   console.log(error);
+// })
+// .then(function(result) {
+//   console.log(result);
+// }, function(error) {
+//   console.log(error);
+// });
+// console.log("End");
+
+
+// Итераторы и Генераторы
+// Symbol.iterator — это итератор по умолчанию для объекта. Цепи for...of основаны на данном типе итератора.
+// В примере ниже мы узнаем, как нужно применять его и как использовать функции-генераторы.
+// Пример:
+// let myIterableObj = { 
+//   [Symbol.iterator] : function* () {
+//     yield 1; yield 2; yield 3;
+// ...
+// console.log([...myIterableObj]);
+
+
+// Для начала мы создадим объект и используем Symbol.iterator и функции-генераторы для заполнения его некоторыми значениями.
+// Во второй строке кода мы используем * с ключевым словом function. Это называется функция-генератор (generator function).
+// Ниже приведен пример того, как применение функций-генераторов может оказаться полезным:
+// function* idMaker() {
+//   let index = 0;
+//   while (index < 5)
+//     yield index++;
+// }
+// var gen = idMaker();
+// console.log(gen.next().value);
+
+// Мы можем выходить из функций-генераторов и снова входить в них позднее. Их привязки переменной (контекст) сохранятся при повторном входе. Они являются очень мощным инструментом для асинхронного программирования, особенно в сочетании с промисами. Они также могут пригодиться для создания цепей с особыми требованиями.
+// Мы можем поместить функции-генераторы друг в друга, чтобы создать более сложные структуры и передавать им аргументы при их вызове.
+// В примере ниже показано, как можно использовать функции-генераторы  совместно с Symbol.iterators.
+// Пример: 
+
+
+// const arr = ['0', '1', '4', 'a', '9', 'c', '16'];
+// const my_obj = {
+//   [Symbol.iterator]: function*() {
+//     for(let index of arr) {
+//       yield `${index}`;
+//     }
+//   }
+// };
+// const all = [...my_obj]
+//   .map(i => parseInt(i, 10))
+//   .map(Math.sqrt)
+//   .filter((i) => i < 5)
+//   .reduce((i, d) => i + d);
+// console.log(all);
+// Мы создаем объект из 7 элементов при помощи Symbol.iterator и функций-генераторов. Во второй части мы назначаем наш объект константе all. В конце мы печатаем его значение.
+
+
+// // Модули
+// // иморт кода
+// // lib/math.js
+// //обозначаем переменные для експорта
+// export let sum = (x, y) => { return x + y; }
+// export let pi = 3.14;
+
+// //импортируем в файл переменные
+// // app.js
+// import * as math from "lib/math"
+// console.log(`2p = + ${math.sum(math.pi, math.pi)}`)
+
+// Встроенные методы
+
+// Поиск элемента массива 
+// Традиционным способом поиска первого элемента массива по его значению и правилу был следующий:
+
+// [4, 5, 1, 8, 2, 0].filter(function (x) {
+//   return x > 3;
+// })[0];
+
+// ES6
+// [4, 5, 1, 8, 2, 0].find(x => x > 3);
+
+
+// Вы также можете получить индекс элемента выше при помощи метода findIndex():
+// [4, 5, 1, 8, 2, 0].findIndex(x => x > 3);
+
+// Повторяющиеся строки
+// До появления ES6 следующий синтаксис являлся правильным способом дублировать строку несколько раз:
+// console.log(Array(3 + 1).join("foo")); // foofoofoo
+
+// ES6
+// console.log("foo".repeat(3)); // foofoofoo
+
+// Поиск строк
+// До появления ES6 единственным способом найти позицию текста в строке было использование метода indexOf(). Например:
+
+// "SoloLearn".indexOf("Solo") === 0; // true
+// "SoloLearn".indexOf("Solo") === (4 - "Solo".length); // true
+// "SoloLearn".indexOf("loLe") !== -1; // true
+// "SoloLearn".indexOf("olo", 1) !== -1; // true
+// "SoloLearn".indexOf("olo", 2) !== -1; // false
+
+// ES6
+// "SoloLearn".startsWith("Solo", 0); // true
+// "SoloLearn".endsWith("Solo", 4); // true
+// "SoloLearn".includes("loLe"); // true
+// "SoloLearn".includes("olo", 1); // true
+// "SoloLearn".includes("olo", 2); // false

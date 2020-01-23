@@ -1,0 +1,10 @@
+<i> text </i> наклонный текст 
+<em> text </em>  наклонный текст 
+<b> text </b> жирный текст
+<strong> text </strong> жирный текст
+<h1> text </h1>  h1 - h6 размеры текста
+<p> text> </p> текст с переносом на новою строку
+<strike> text </strike> перечеркнутый текст
+<u> text </u> подчеркнутый текст
+<p> <abbr title="It is beaver"> BEAVER</abbr></p>
+<address> Kiev </address> 

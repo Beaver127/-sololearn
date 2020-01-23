@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'poller_oneregular';
+    src: url('../fonts/pollerone/pollerone-webfont.eot');
+    src: url('../fonts/pollerone/pollerone-webfont.eot?#iefix')
+        format('embedded-opentype'),
+        url('../fonts/pollerone/pollerone-webfont.woff') format('woff'),
+        url('../fonts/pollerone/pollerone-webfont.ttf') 
+        format('truetype'),
+        url('../fonts/pollerone/pollerone-webfont.svg#poller_oneregular')
+        format('svg'); 
+}
+@font-face {
+font-family: 'leckerli_oneregular';
+src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot');
+src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot?#iefix') format ( 'embedded-opentype'),
+url('../fonts/leckerlione/leckerlione-regular-webfont.woff')
+format('woff'),
+url('../fonts/leckerlione/leckerlione-regular-webfont.ttf')
+format ('truetype') ,
+url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
+}
+body {
+background: #fff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14рх;
+font-weight: normal;
+line-height: 1;
+margin: 0;
+min-width: 960рх;
+padding: 0;
+}
+
+p {
+color: #252525;
+line-height: 24рх; 
+margin: 0;
+padding: 0;  
+}
+p a {
+color: #252525;
+text-decoration: underline; 
+}
+p a:hover {
+    color: #898989; 
+}
+#header {
+margin: 0 auto;
+padding: 44рх О 50рх;
+text-align: center;
+width: 960рх; 
+}
+#header a.logo {
+display: block;
+margin: 0 auto;
+padding: 0;
+width: 340рх; 
+}
+#header a.logo img {
+border: 0;
+display: block;
+margin: 0;
+padding: 0;
+}
+#header ul {
+margin: 0;
+padding: 56рх 0 0; 
+}
+#header ul li {
+display: inline;
+list-style: none;
+margin: 0;
+padding: 0 19рх; 
+}
+#header ul li a {
+color: #252525;
+display: inline-block;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 14рх;
+font-weight: normal;
+margin: 0;
+padding: 0 0 Зрх; 
+text-decoration: none;
+text-transform: uppercase; 
+}
+#header ul li a:hover, #header ul li.selected a {
+    color: #0ba39c;
+}
+#body {
+margin: 0;
+padding: 0 0 30рх;
+text-align: center;
+}
+
+#body hl {
+color: #fff;
+display: inline;
+font-family: poller_oneregular;
+font-size: 35рх;
+font-weight: normal;
+margin: 0;
+padding: 0;
+text-transform: uppercase;
+}
+#body h1 span {
+background: #252525;
+display: inline-block;
+padding: 15рх 28рх 12рх; 
+}
+#body > div {
+margin: 0 auto;
+padding: 0;
+width: 960рх; 
+}
+#body > div img {
+border: 2рх solid #292929;
+margin: 24рх 0 0;
+padding: 0; 
+}
+#body > div .article {
+margin: 0 auto;
+padding: 30рх 30рх 0;
+width: 560рх; 
+}
+#body > div .article h2 {
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 25рх;
+font-weight: normal;
+margin: 0 0 30рх; 
+}
+#body > div .article h3 {
+color: #252525;
+line-height: 24рх;
+margin: 0;
+padding: 0; 
+}
+#body > div .article h4 {
+background: #252525;
+color: #fff;
+display: inline-block;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 25рх;
+font-weight: normal;
+margin: 0 0 30рх;
+padding: 8рх 27рх 10px; 
+}
+#body > div .article p {
+margin: 0 0 30рх; 
+}
+#body div ul {
+margin: 0;
+padding: 24рх 10px 0;
+width: 940рх; 
+}
+#body div ul li {
+border: 2рх solid #1a1a1a;
+display: block;
+list-style: none;
+margin: 0 0 13рх;
+overflow: hidden;
+padding: 0; 
+}
+#body div ul li .figure {
+border-right: 2рх solid #1a1a1a;
+float: left;
+margin: 0;
+padding: 0;
+width: 376рх; 
+}
+
+#body div ul li img {
+border: 0;
+display: block;
+margin: 0;
+padding: 0;
+opacity: 0.8; 
+transition: 0.5s ease-in-out; 
+}
+#body div ul li .figure:hover img {
+opacity: 1; 
+}
+#body div ul li div {
+float: left;
+margin: 0;
+padding: 63рх 0 20рх;
+width: 558рх; 
+}
+#body div ul li div h3 {
+color: #252525;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 25рх;
+font-weight: normal;
+margin: 0;
+padding: 0;
+text-transform: uppercase; 
+}
+#body div ul li div p {
+padding: 30рх 30рх 18рх; 
+}
+#body div ul li div a.more {
+background: #000;
+color: #fff;
+display: inline-block;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 18рх;
+font-weight: normal;
+margin: 0;
+padding: 8рх 28рх;
+text-decoration: none;
+text-transform: uppercase; 
+}
+#body div ul li div a.more:hover {
+color: #252525;
+background: #fff;
+border: 2рх solid #252525;
+}
+#body #featured {
+margin: 0 0 13рх;
+padding: 0;
+position: relative;
+width: 100%; 
+}
+#body #featured img {
+border: 0;
+display: block;
+margin: 0;
+padding: 0;
+width: 100%; 
+}
+#body #featured div {
+left: 50%;
+margin-left: -420рх;
+margin-top: -171рх;
+padding: 0 0 0 470рх;
+position: absolute;
+top: 50%;
+text-align: left;
+width: 490рх;
+}
+#body #featured div h2 {
+background: #abf;
+color: #000;
+display: inline-block;
+font-family: poller_oneregular;
+font-size: 20рх;
+font-weight: normal;
+margin: 0 0 18рх;
+padding: 23рх 27рх 20рх;
+text-transform: uppercase;
+}
+#body #featured div span {
+background: #252525;
+color: #fff;
+display: inline-block;
+font-size: 20рх;
+margin: 7рх 0;
+padding: 12рх 27рх; 
+}
+#body #featured div a {
+background: #0ba39c;
+color: #fff;
+display: inline-block;
+font-size: 16рх;
+margin: 15рх 0 0;
+padding: 26рх 27рх 22рх;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+#body #featured div a:hover {
+background: #1fc3bc; 
+}
+#body > ul {
+margin: 0 auto;
+overflow: hidden;
+padding: 24рх 0 0;
+width: 960рх; 
+}
+#body > ul li {
+display: block;
+float: left;
+margin: 0 10px 20рх;
+padding: 0;
+width: 300рх; 
+}
+#body > ul li a {
+color: #000;
+display: block;
+font-family: poller_oneregular;
+font-size: 20рх;
+font-weight: normal;
+margin: 0;
+padding: 0;
+text-align: left;
+text-decoration: none;
+text-transform: uppercase; 
+}
+#body > ul li a img {
+border: 2рх solid #1a1a1a;
+display: block;
+margin: 20;
+padding: 0;
+opacity: .8;
+transition: 0.Ss ease-in-out;
+}
+#body > ul li a:hover img {
+opacity: 1; 
+}
+#body > ul li a span {
+display: block;
+margin: 0;
+padding: 33рх 0 0; 
+}
+#body form {
+margin: 0 auto;
+padding: 24рх 0 0;
+width: 620рх; 
+}
+#body form input, #body form textarea {
+border: 2рх solid #252525;
+color: #252525;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15рх;
+font-weight: normal;
+margin: 0 0 37рх;
+padding: 20рх 10px;
+text-align: center;
+text-transform: uppercase;
+width: 596рх; 
+}
+#body form textarea {
+height: 175рх;
+overflow: auto;
+resize: none; 
+}
+#body form #send {
+background: #252525;
+color: #fff;
+font-family: "Arial Black", Gadget, sans-serif;
+font-size: 15рх;
+font-weight: normal;
+display: inline-Ьlock;
+padding: 20рх 28рх;
+width: auto;
+}
+#body form #send:hover {
+background: #fff;
+color: #252525;
+cursor: pointer; 
+}
+#footer {
+background: #252525;
+margin: 0;
+padding: 36рх 0 42рх; 
+}
+#footer div {
+margin: 0 auto;
+overflow: hidden;
+padding: 0;
+width: 960рх;
+}
+#footer div p {
+color: #fff;
+float: left;
+line-height: 44рх;
+margin: 0 0 0 10px;
+padding: 0;
+}
+#footer div ul {
+display: block;
+float: right;
+margin: 0;
+overflow: hidden;
+padding: 0;
+width: 256рх; 
+}
+#footer div ul li {
+display: block;
+float: left;
+list-style: none;
+margin: 0 10px;
+padding: 0;
+width: 44рх; 
+}
+#footer div ul li a {
+background: url(../images/icons.jpg) no-repeat 0 0;
+display: block;
+height: 44рх;
+margin: 0;
+padding: 0;
+text-indent: -99999рх;
+width: 44рх; 
+}
+#footer div ul li #twitter {
+background-position: 0 0; 
+}
+#footer div ul li #twitter:hover {
+background-position: -44рх 0; 
+}
+#footer div ul li #facebook {
+background-position: 0 -44рх; 
+}
+#footer div ul li #facebook:hover {
+background-position: -44рх -44рх; 
+}
+#footer div ul li #googleplus {
+background-position: 0 -88рх; 
+}
+#footer div ul li #googleplus:hover {
+background-position: -44рх -88рх; 
+}
+#footer div ul li #pinterest {
+background-position: 0 -132рх; 
+}
+#footer div ul li #pinterest:hover {
+background-position: -44рх -132рх; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

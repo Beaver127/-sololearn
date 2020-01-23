@@ -1,0 +1,7 @@
+<hr/> линия на всю строку
+<br/> перенос на новую строку
+<pre> </pre> отображает все пропуски и пробелы
+<big> </big> большой текст 
+<smal> </small> маленький текст
+<p><q cite="http://google.com"> Hello		</q></p> цитирование фразы
+<p><blockquote cite="http://google.com"> Hello </blockquote></p> -цитерование фразы

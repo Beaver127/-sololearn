@@ -1,0 +1,7 @@
+.testBlock {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 0;
+    border: 3px solid blue;
+}

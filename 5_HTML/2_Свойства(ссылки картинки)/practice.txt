@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Использование словаря семантической разметки</title>
+</head>
+<body>
+	<!-- schema.org - Оф сайт словаря семант разметки -->
+	
+	<!-- itemtype="http://schema.org/Person" - указывает что section содержит информацию о человеке -->
+	<section itemscope itemtype="http://schema.org/Person">
+	
+	<!-- itemprop="name" - указывает что там находитьс имя человека -->
+	<h1 itemprop="name">Beaver</h1>
+	<img itemprop="image" src="http://i14.beon.ru/41/95/769541/0/89378700/rainbow_nisha_rokubou_no_shichinin24.jpeg">
+	
+	<!-- itemtype="http://schema.org/Organization" - Элемент содержит данные о организации -->
+	<p itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="name">BeaverGroup </span>
+		<span itemprop="url">http://www.w3.org</span>
+	</p>
+	
+	<!-- itemtype="http://schema.org/PostalAddress" - элемент содержит данные о почтовом адресе -->
+	<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<span itemprop="addressLocality">Moskay</span>,
+		<span itemprop="addressRegion">Yalvutsk</span>
+	</p>
+	
+	<a itemprop="url" href="http://www.w3.org/People/Beavers/">Сайт W3C</a>
+	
+	</section>
+	
+	<a href="http://google.com/webmasters/tools/richsnippets">Инструмент проверки структированных данных</a>
+	<a href="http://support.google.com/webmasters/bin/answer.py?h1=ru&answer=99170">описание</a>
+</body>
+</html>
+	
+	

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Таблицы</title>
+<meta charset="utf-8" />
+</head>
+<body>
+
+<!-- 
+ <table> - для обозначения таблицы
+ border="1" - для отображения контуров таблицы
+ <tr> - для обозначения ряда 
+ <th> - для обозначения заголовков
+ <td> - для обозначения значений 
+ 
+-->
+
+<table border="1">
+<caption>Таблица количества бобров</caption>
+<tr>
+<th>Украина</th>
+<th>Россия</th>
+</tr>
+<tr><td>1</td><td>2</td></tr>
+<tr><td>7</td><td>9</td></tr>
+<tr><td>2</td><td>10</td></tr>
+<tr><td>12</td><td>5</td></tr>
+</table>
+
+<br />
+
+<!-- 
+
+cellpadding="7" - отступы с вверху и снизу
+
+cellspacing="0" - отступы между ячейками
+
+bgcolor="D3EDF6" - цвет ячейки
+
+align="center" - расположение
+
+valign="top" - расположение в ячейке
+
+width="98%" - ширина в %-ах по отношению к окну
+
+colspan="2" - задаем что эта ячейка будет занимать две ячейки
+-->
+
+<table border="1" cellpadding="7" cellspacing="5">
+<tr>
+	<td colspan="2" bgcolor="D3EDF6" align="center">Ячейка_1</td>
+</tr>
+<tr>
+	<td valign="top" align="center">Ячейка_2</td>
+	<td width="98%" valign="top">Ячейка_3</td>
+</tr>
+</table>
+
+</body>
+</html>

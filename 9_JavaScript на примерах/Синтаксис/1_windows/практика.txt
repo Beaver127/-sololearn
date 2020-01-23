@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*
+        //для открытия окна
+        function go() {
+           open("index.html");
+        }
+        //вопросительное окно пользователю
+         if(window.confirm("Press OK or CLOSE")) {
+            window.alert("OK");
+        } else {
+            window.alert("CLOSE");
+        }
+        //вопрос + данные от пользователя
+        var userName = prompt("What is yout name?","None");
+        if(userName == null) {
+            alert("Bye!")
+        } else {
+            document.write("Hello, " + userName);
+        }
+        
+        */
+        
+    </script>
+</head>
+<body>
+    <form>
+    <input type="button" value="Open index.html" onClick="go()">
+    </form>
+</body>
+</html>

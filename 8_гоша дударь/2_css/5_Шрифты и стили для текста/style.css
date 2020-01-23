@@ -1,0 +1,24 @@
+p {
+	text-indent: 1.1em;
+}
+#textStyles {
+	font-size: 1.1em;
+	font-weight: normal;
+	font-family: Comic Sans MS;
+	text-decoration: none;
+	text-align: right;
+	text-transform: uppercase;
+	word-spacing: 10px;
+	letter-spacing: 10px;
+	line-height: 500%;
+	
+}
+#textStyles:hover {
+	color : red;
+}
+#LastBeaver {
+	text-transform: uppercase;
+}
+#Beaver {
+	text-transform: none;
+}

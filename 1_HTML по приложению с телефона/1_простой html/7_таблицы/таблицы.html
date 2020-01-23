@@ -1,0 +1,78 @@
+ 
+<html  >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<!-- 
+tabel - таблица
+tr - горизонтальная строка
+td - ячейка
+-->
+
+<body>
+    <table border="2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <br/>
+    <!--
+    атрибут border в теге table делает обводку бордюром вокруг самой таблицы и вокруг каждой ячейки таблицы
+    введёный парметр влияет только на обводку вокруг таблицы
+     атрибут colspan в теге td определяет сколько месат будет занимать ячейка по отношению к другим ячейкам
+     напрмиер одна ячейка может быть шириной в две ячейки
+     атрибут bgcolor в теге td определяет цвет заднего фона ячейки
+      -->
+    
+    <table border="2">
+        <tr>
+            <td bgcolor="red">Red</td>
+            <td bgcolor="green">Green</td>
+            <td bgcolor="blue">Blue</td>
+        </tr>
+        <tr>
+            <td><br/></td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    <br/>
+    
+    <!-- 
+    таблица из букв и цифр 
+    тег <th> - отвечает за заголовок
+    -->
+    
+    <table border="2">
+        <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>2</td>
+            <td></td>
+            <td>x</td>
+            <td></td>
+        </tr>
+         <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+        </tr>
+    </table>
+    
+<!-- атрибут border не поддерживается в HTML5 -->
+</body>
+</html>

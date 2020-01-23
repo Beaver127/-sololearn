@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Теги</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<!-- 
+
+<details> - тег который скрывает текст 
+<summary>AUTOR</summary> - название скрытого текста например автор 
+<p>Last Beaver</p> - а здесь пишем скрытое содержание при нажатии на компонент будет показана информация об авторе(показан скрытый текст)
+This is my text
+</details>
+
+<mark>Last Beaver</mark> - для выделения текста 
+
+<ruby> - тег для подсказки над символом или словом
+one|<rt>1</rt> one - слово(или символ) 1 - подсказка над словом что означает это слово 
+two|<rt>2</rt>  
+three|<rt>3</rt>  
+hour|<rt>4</rt>  
+five|<rt>5</rt>  
+six|<rt>6</rt>  
+seven|<rt>7</rt>  
+eight|<rt>8</rt> 
+nine|<rt>9</rt> 
+zero|<rt>0</rt> 
+</ruby>
+
+
+<progress max="100" value="50"> - для отображения полоски прогреса \ value - значение нашего прогреса
+Загружено на <span id="value">25</span>% - если прогрес не будет отображен покажется єтот текст
+</progress>
+
+
+<form oninput="result.value=(cm.value/2.54).toFixed(2)"> - введённое число делит на 2.54 и округляет до двух 
+<p>Введите длину в сантиметрах:
+<input type="number" name="cm" autofocus></p>
+<p>Длина в дюймах: <output name="result">0</output></p> - результат 
+</form>
+
+
+-->
+
+<body>
+
+<details>
+<summary>AUTOR</summary>
+<p>Last Beaver</p>
+</details></br>
+My name is <mark>Last Beaver</mark>
+</br>
+
+<ruby>
+one|<rt>1</rt>  
+two|<rt>2</rt>  
+three|<rt>3</rt>  
+hour|<rt>4</rt>  
+five|<rt>5</rt>  
+six|<rt>6</rt>  
+seven|<rt>7</rt>  
+eight|<rt>8</rt> 
+nine|<rt>9</rt> 
+zero|<rt>0</rt> 
+</ruby>
+</br>
+
+<progress max="100" value="50">
+Загружено на <span id="value">25</span>%
+</progress>
+</br>
+<form oninput="result.value=(cm.value/2).toFixed(2)">
+<p>Введите длину в сантиметрах:
+<input type="number" name="cm" autofocus></p>
+<p>Длина в дюймах: <output name="result">0</output></p>
+</form>
+
+</body>
+</html>

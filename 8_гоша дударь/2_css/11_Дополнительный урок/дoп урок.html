@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    
+    <title>Document</title>
+</head>
+
+<!-- 
+
+[class] { - применяем стиль по наличию у тега атрибута class
+    color: aqua;
+}
+
+[class=hi] { - применяем стиль по наличию у тега атрибута class со значением hi
+    color: aqua;
+}
+
+p[class=hi] { - применяем стиль по наличию у тега <p> атрибута class со значением hi
+    color: aqua;
+}
+
+p:empty { - если имееться пустой абзац для него пременяеться такой стиль
+    background: red;
+    height: 20px;
+    width: 20px;
+}
+
+:enabled { - применяеться к тегам у которых есть  атрибут disabled
+    width: 20px;
+    height: 20px;
+}
+
+
+b:first-child { - когда в каком либо теге есть 
+   пару тегов например <b> то такой стиль будет применяться на первый тег на первый элемент
+   html:
+   <p><b>Test1 </b><b>Test2</b></p>
+   css:
+    color: aqua;
+    font-size: 40px;
+}
+
+p:first-line { - приминияет к первой строчке находящейся в теге
+   p:last-line - приминияет к последней строчке находящейся в теге
+    color: aqua;
+    font-size: 40px;
+}
+
+:focus { - когда мы фокусируемся на каком либо элементе то активизируется данный стиль
+    color: white;
+    background-color: grey;
+}
+
+#block_1 {
+    width: 100%;
+    height: 100px;
+    border: 2px solid #88e690;
+    background-color: antiquewhite;
+    float: left;
+    cursor: help; - при наведении на блок курсор будет меняться на знак вопроса 
+    вообщем cursor: - для смены значка курсора 
+}
+
+
+ul > li {
+    color: aqua;
+}
+
+opacity: 0.9; - прозрачность блока
+
+outline: none; - убирает обводку вокруг нампример текстового поля 
+
+outline-color: red;
+
+text-align: center; - расположение текста 
+-->
+
+
+<div id="block_1"></div>
+<input type="text" />
+<ul>
+    <li>test 1</li>
+    <li>test 2</li>
+    <li>test 3</li>
+</ul>
+</html>

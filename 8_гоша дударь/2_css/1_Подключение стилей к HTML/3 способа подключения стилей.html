@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Написание стилей</title>
+<style type="text/css">
+body {
+background-color: gray;
+}
+</style>
+
+<script type="text/javascript">
+
+</script>
+</head>
+
+<!-- 
+
+1-ый способ подключения стиля(рекомендуется гуглом но не сильно желательно использовать в практике):
+
+<h1 style="color:red">Заголовок первого уровня</h1> - в теге прописываем доп параметр как style="" - и в нём пишем свой css для данного тега
+
+2-ой способ подключения стиля(подключается в теге <head>):
+
+<style type="text/css"> - прописываем тег стиль и прописываем атрибут type в нём указываем что мы используем CSS 
+body { - и прописываем тег к которому будет относится этот стиль 
+background-color: red; - первый способ указать задний фон тега body
+background-color: #000000; - второй способ указать задний фон тега body
+}
+</style>
+
+так же можно подключать и javascript:
+<script type="text/javascript">
+</script>
+
+3-ий способ подключения стиля(с помощью документа этот способ самый распрастранённый):
+создаем файл style.css и там прописываем наш css:
+
+p { - прописываем стили для каждого из тегов 
+	background-color: yellow;
+}
+h3 {
+	color: green;
+}
+затем в нашем теге <head> прописываем следущее:
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+rel="stylesheet" - указываем что это стиль 
+type="text/css" - указываем что мы подключаем css 
+href="style.css" - и указываем ссылку или расположение нашего подключаемого css 
+
+
+-->
+
+<body>
+	<h1 style="color:red">Заголовок первого уровня</h1>
+	<p>Здесь находится текст параграфа</p>
+	<h3>Заголовок 3 уровня</h3>
+	<p>Еще немного текста здесь!!!</p>
+</body>
+</html>

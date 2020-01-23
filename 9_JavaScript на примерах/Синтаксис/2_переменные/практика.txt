@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*
+        n1= 5;
+        n2 = 5.58;
+        str = "Hello";
+        str1 = 'world';
+        obj1 = null;
+        Bool1 = true;
+        
+        document.write("<br/>n1 - " + typeof(n1));
+        document.write("<br/>n2 - " + typeof(n2));
+        document.write("<br/>str - " + typeof(str));
+        document.write("<br/>str1 - " + typeof(str1));
+        document.write("<br/>obj1 - " + typeof(obj1));
+        document.write("<br/>Bool1 - " + typeof(Bool1));
+        
+        */
+        
+        /*
+        в любом случае автоприведение идет к строке
+        var A = 1;
+        var B = "1";
+        var s = B + A; //string//11
+        var i = A + B; //string//11
+        document.write("<br/>s - " + typeof(s) + ":" + s);
+        document.write("<br/>i - " + typeof(i) + ":" + i);
+        */
+        
+        var A  = "1";
+        //приводит к числу строку
+        var B = parseInt(A);
+        document.write("<br/> " + typeof(B));
+        
+        var C = "5.1";
+        //приводит к числу строку
+        var D = parseFloat(C);
+        document.write("<br/> " + typeof(D));
+        
+        var E = "2 + 2";
+        //приводит к числам и считает
+        var F = eval(E);//4
+        document.write("<br/> " + F + ":"+ typeof(F));
+    </script>
+</head>
+<body>
+    <form>
+    <input type="button" value="Open index.html" onClick="go()">
+    </form>
+</body>
+</html>

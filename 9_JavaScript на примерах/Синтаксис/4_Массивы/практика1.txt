@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document1</title>
+   <script>
+       //минимальное значение 
+//       var a = [6,26,2624,62,2,234];
+//       
+//       min = a[0];//минмум
+//       minId = 0;//индекс min
+//       
+//       for(i = 0; i < a.length;i++) {
+//           if(a[i] < min) {
+//               min = a[i];
+//               minId = i;
+//           }
+//           document.write(" " + a[i] + " ");
+//       }
+//       document.write("<br/>min: " + min);
+//       document.write("<br/>minId: " + minId);
+       
+       
+       //максимальное значение
+       var a = [0,0,0];
+        a[0] = [6,3,2];
+        a[1] = [61,23,24];
+        a[2] = [62,243,255];
+        Max = a[0][0];
+       var ind = [0,0];
+        for(i = 0; i < a.length; i++) {
+            for(j = 0; j < a[i].length;j++) {
+                if(a[i][j] > Max) {
+                    Max = a[i][j];
+                    ind[0] = i;
+                    ind[1] = j;
+                }
+            }
+        }
+       document.write("Max: " + Max);
+       document.write("<br/> Ind [" + ind[0] + "] [" + ind[1] + "]");
+    </script>
+</head>
+<body>
+    <form>
+    <input type="button" value="Open index.html" onClick="go()">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

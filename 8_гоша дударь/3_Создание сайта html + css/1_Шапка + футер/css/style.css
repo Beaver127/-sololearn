@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*Для всего документа*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html {height: 100%;}
+
+/*Для шапки и низа сайта*/
+header, footer {
+    width: 98%;
+    background-color: #fff;
+    
+}
+header {
+    padding: 1%;
+    border-bottom: 2px solid silver;
+}
+#logo {
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+}
+.contact {
+    font-size: 1.5em;
+    font-family: Comic Sans MS, sans-serif;
+    margin-left: 10px;
+}
+input[type=text].field {
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    margin-left: 20px;
+}
+input[type=text].field:focus {
+    border: 2px solid aqua;
+}
+footer img {
+    float: left;
+    
+    width: 10%;
+}
+footer {
+    height: auto;
+    padding: 1%;
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    padding-bottom: 2%;
+}
+
+/*Разделитель хедера и футера*/
+#page-wrap:after {
+    content: "";
+    display: block;
+} 
+
+footer,#page-wrap:after {height: 10px}
+
+#page-wrap {
+    min-height: 93%;
+    margin-bottom: -10px;
+}
+
+/*Для тега body*/
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: #ac7272;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+/*Для ссылок*/
+a {
+    color: aqua;
+    text-decoration: none;
+    transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -webkit-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+    transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -webkit-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+}
+
+a:active {
+    color: red;
+}
+/*При выделении контента*/
+::selection {background: red;color: white;}
+::-moz-selection {background: red;color: white;}
+
+/*Для изображений*/
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+/*Позиционирование по правому боку*/
+.right {
+    float: right;
+}
+
+/*Позиционирование по левому боку*/
+.left {
+    float: left;
+}

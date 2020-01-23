@@ -1,0 +1,36 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1f;
+    background-color: beige;
+    grid-auto-rows: minmax(100px, auto);
+    
+    
+}
+.box1 {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: black
+}
+.box2 {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: aqua;
+}
+
+.box3 {
+   grid-column: 1;
+    grid-row: 2; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document1</title>
+   <script>
+       //Массивы
+       
+       //числовой
+       var array;
+       array = [4,6,7,2];
+       //строковый
+       //var Months;
+       Monhs = ["One","Two","Three"];
+       //берем значения из массива
+       num0 = array[0];//4
+       num1 = array[3];//2
+       
+       //меняем значение первого элемента в массиве
+       array[0] = 100;
+       //мы пытаемся задать значение несуществуещему элементу
+       //массива и при этом создается новая ячейка с нашим значением
+       array[4] = 99;
+       //100,6,7,2,99,,1 - вывод таков будет
+       array[6] = 1;
+       document.write(array);
+    </script>
+
+	<script>
+       //Многомерные массивы мы можем создавать с помощью сетания 
+       //в уже созданный массив еще одного масива
+       var array;
+       array = [];
+       array[0] = [3,2,1];
+       document.write(array[0][0]);
+    </script>
+</head>
+<body>
+    <form>
+    <input type="button" value="Open index.html" onClick="go()">
+    </form>
+</body>
+</html>
+

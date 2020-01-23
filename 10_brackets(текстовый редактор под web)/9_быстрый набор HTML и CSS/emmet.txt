@@ -1,0 +1,72 @@
+тег + TAB
+
+h1+h2:
+<h1></h1>
+<h2></h2>    
+
+h1:
+<h1></h1>
+
+h1{Hello World}:
+<h1>Hello World</h1>
+
+h2(lorem3):
+<h2>Lorem ipsum dolor.</h2> - заголовок с 3 раднодмных слов
+
+p(lorem10)*5: - 5 абазацев в каждом абзаце по 10 слов
+
+	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, 	facilis!</p>
+	   <p>Quam illo enim ut dolore eligendi, aperiam accusantium, sunt iste.</p>
+	   <p>Delectus asperiores quidem quos unde porro laboriosam obcaecati, ea 		at!</p>
+	   <p>Error rerum ex voluptatum veniam itaque sequi, in quos natus.</p>
+	   <p>Rem reprehenderit cum ratione dolores ullam. Quia, minima nisi 	   	quisquam.</p> 
+
+
+img.left[C:\Users\Last_Beaver\Pictures\8fj5iAba32I.jpg alt="Last Beaver"]:
+
+картинка с расположение с классом и с атрибутом alt
+
+<img src="C:UsersLast_BeaverPictures8fj5iAba32I.jpg" alt="Last Beaver" class="left">
+
+ul>li.item$*7:
+список с пунктами и с классами пронемерованными от одного
+<ul>
+	       <li class="item1"></li>
+	       <li class="item2"></li>
+	       <li class="item3"></li>
+	       <li class="item4"></li>
+	       <li class="item5"></li>
+	       <li class="item6"></li>
+	       <li class="item7"></li>
+	   </ul>
+
+ul>li.item$*7>a[# title="item$"]{item$}:
+в каждом из пунктов списка делает ссылку с разными названиями и с подсказками
+
+<ul>
+	       <li class="item1"><a href="#" title="item1">item1</a></li>
+	       <li class="item2"><a href="#" title="item2">item2</a></li>
+	       <li class="item3"><a href="#" title="item3">item3</a></li>
+	       <li class="item4"><a href="#" title="item4">item4</a></li>
+	       <li class="item5"><a href="#" title="item5">item5</a></li>
+	       <li class="item6"><a href="#" title="item6">item6</a></li>
+	       <li class="item7"><a href="#" title="item7">item7</a></li>
+	   </ul>
+
+для того чтобы выйти из тегов и прописать новый делаем так 
+
+ul>li.item$*7>a[# title="item$"]{item$}^^p(lorem10):
+
+<ul>
+	           <li class="item1"><a href="#" title="item1">item1</a></li>
+	           <li class="item2"><a href="#" title="item2">item2</a></li>
+	           <li class="item3"><a href="#" title="item3">item3</a></li>
+	           <li class="item4"><a href="#" title="item4">item4</a></li>
+	           <li class="item5"><a href="#" title="item5">item5</a></li>
+	           <li class="item6"><a href="#" title="item6">item6</a></li>
+	           <li class="item7"><a href="#" title="item7">item7</a></li>
+	       </ul>
+	       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, voluptate.</p>
+
+
+

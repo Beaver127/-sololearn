@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Slider</title>
+</head>
+<style>
+    /*стили для компонентов*/
+    #main {
+        position: relative;
+        margin: 100px auto;
+        padding: 5px;
+        width: 660px;
+        height: 360px;
+        background-color: #ffc5c5;
+        border: 5px solid #c3c3c3;
+        border-radius: 30px;
+    }    
+    #scr {
+        margin: 20px auto;
+        width:300px;
+        height: 300px;
+        margin-top: 20px;
+        background-color: #ffc5c5;
+        background-size: cover;
+        border: 2px solid #c3c3c3;
+        border-radius: 30px;
+    }
+    button {
+        position: absolute;
+        top: 150px;
+        width: 50px;
+        height: 70px;
+        font: 12pt arial,tahoma,sans-serif;
+        text-align: center;
+        background-color: #ffc5c5;
+    }
+    .left {
+        left: 15px;
+    }
+    .right {
+        right: 15px;
+    }
+</style>
+<script>
+    //класс slider(объект)
+var slider = {
+    //массив с названиями изображений
+    slides: ["9.jpg","10.jpg","11.jpg","12.jpg",
+             "13.jpg","14.jpg"],
+    //переменная текущей фотки
+    frame:0,
+    //функция которая меняет избражение на другое елемента scr
+    set: function(image) {
+        document.getElementById("scr").style.backgroundImage = "url(images/"+image+")";
+    },
+    //функция инициализации слайдера
+    init: function() {
+        //сетаем первую фотку из массива
+        this.set(this.slides[this.frame]);
+    },
+    //функция переключения влево
+    left: function() {
+        this.frame--;
+        if(this.frame < 0) this.frame = this.slides.length-1;
+        this.set(this.slides[this.frame]);
+    },
+    //функция переключения право
+    right: function() {
+        this.frame++;
+        if(this.frame == this.slides.length) this.frame = 0;
+        this.set(this.slides[this.frame]);
+    }  
+};
+    //запуск слйдера после загрузки элемента
+    window.onload = function() {
+        slider.init();
+        //в интервал 10 сек будет переключаться картинка вправо
+        setInterval(function() {
+            slider.right();
+        },400);
+    };
+</script>
+<body>
+    <div id="main">
+        <button class="left" onclick="slider.left();"><</button>
+        <div id="scr"></div>
+        <button class="right" onclick="slider.right();">></button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

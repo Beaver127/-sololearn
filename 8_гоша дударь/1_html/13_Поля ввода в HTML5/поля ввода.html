@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>поля ввода</title>
+<meta charset="utf-8" />
+</head>
+<body>
+
+<!-- 
+
+method="get"
+method="post"
+
+такой тег ставится перед каким либо компонентом например перед текстовым полем
+<label for="name">Введите ваше имя: </label>
+
+for="!name" - привязывает label и компонент 
+<input type="text" id="!name" name="name"/>
+
+placeholder="Поиск..." - делает данный текст в поле прозразным если в поле нету никаких символов
+
+maxlength="3" - максимум символов
+
+<input type="date" id="date" /> - для ввода даты
+
+<input type="datetime-local"/> - для ввода даты с 24-ым временем
+
+<input type="week"/> - для ввода неделями
+
+<input type="url"/> - для ввода url если ввести непрвильный url покажет ошибку
+
+<input type="tel"/> - для ввода телефона аналогия с url
+
+<input type="range"/> - слайдер(например для контр. громкостью)
+
+<input type="radio"/> - кнопка вкл и выкл
+
+объеденение radio кнопок:
+<input type="radio" name="state" id="male"/>
+	<label for="male">Мужской: </label>
+	<input type="radio" name="state" id="female"/>
+	<label for="female">Женский: </label>
+	
+	<input type="number"/> - для ввода чисел если ввести не цифрами выдаст ошибку 
+	
+	<input type="file"/> - для открытия файлов 
+	
+	<input type="color"/> - выбор цвета
+	
+	<input type="submit" value="submit"/> - при нажатии перезагружает страницу
+
+	<input type="reset"/> - очищает все введённые данные со страницы
+-->
+
+<form name="beaver" action="" method="">
+	<label for="!name">Введите ваше имя: </label>
+	<input type="text" value="123" id="!name" placeholder="Поиск..." name="name" maxlength="3"/>
+	<br/>
+	<label for="date">День рождения: </label>
+	<input type="date" id="date" />
+	<br/>
+	<input type="datetime-local"/>
+	<br/>
+	<input type="week"/>
+	<br/>
+	<input type="url"/>
+	<br/>
+	<input type="tel"/>
+	<br/>
+	<input type="range"/>
+	<br/>
+	<input type="radio"/>
+	<br/>
+	<input type="radio" name="state" id="male"/>
+	<label for="male">Мужской: </label>
+	<input type="radio" name="state" id="female"/>
+	<label for="female">Женский: </label>
+	<br/>
+	<input type="password"/>
+	<br/>
+	<input type="number"/>
+	<br/>
+	<input type="password"/>
+	<br/>
+	<input type="file"/>
+	<br/>
+	<input type="email"/>
+	<br/>
+	<input type="color"/>
+	<br/>
+	<input type="button" value="button"/>
+	<br/>
+	<input type="submit" value="submit"/>
+	<br/>
+	<input type="reset"/>
+</form>
+
+</body>
+</html>

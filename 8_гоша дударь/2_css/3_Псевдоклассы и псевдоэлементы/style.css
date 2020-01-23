@@ -1,0 +1,35 @@
+* {
+	text-decoration: none;
+}
+p#example:first-letter {
+	color:red;
+}
+span#word_l {
+	color: green;
+}
+p#wolf:first-line {
+	color: grey;
+}
+p#tiger:first-line {
+	color: red;
+}
+.href {
+	color: black;
+}
+.href:hover {
+	color: red;
+}	
+.href:active {
+	color: blue;
+}
+.href:visited {
+	color: gray;
+}
+p:hover {
+	color: red;
+}
+p:active {
+	color: blue;
+}
+
+
